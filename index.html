@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<title>SHRI HETRAM INTERNATIONAL SCHOOL LADPUR BHOJIPURA, BAREILLY</title>
+<style type="text/css">
+#loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.75) url(loading2.gif) no-repeat center center;
+  z-index: 10000;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+       <header>
+           <h1 id='title'>SHRI HETRAM INTERNATIONAL SCHOOL LADPUR BHOJIPURA, BAREILLY</h1>
+           <p id='description'>
+              UDISE CODE - 09201100604
+
+           </p>
+       </header>
+       <form method="POST" autocomplete="off" name="google-sheet" id='survey-form'>
+        <script>
+function copyTextValue10(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("destination").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("destination").value = selectedOptionValue;
+}
+</script>
+
+<input type="text" name="Session" id="destination" style="visibility:hidden;">
+        <div class='form-input'>
+               <p>Session</p>
+               <select onChange="copyTextValue10(this);" id='dropdown' class='form-input-size' required>
+                   <option disabled selected value>--SELECT--</option>
+                   <option value="2021-22">2021-22</option>
+               </select>
+           </div>
+<script>
+function copyTextValue21(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("class_out").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("class_out").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Class" id="class_out" style="visibility:hidden;">                   
+           <div class='form-input'>
+               <p>Class</p>
+               <select onChange="copyTextValue21(this);" id='class' class='form-input-size' required>
+                   <option disabled selected value>--SELECT--</option>
+                   <option value="I">I</option>
+                   <option value="II">II</option>
+                   <option value="III">III</option>
+                   <option value="IV">IV</option>
+                   <option value="V">V</option>
+               </select>
+           </div>
+
+            <div class='form-input'>
+               <label id='name-label'>SR Number</label>
+               <input type='number' name="SR Number" id='name' placeholder='SR Number' class='form-input-size' required />
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Date of Addmission</label>
+               <input type='text' autocapitalize="characters" name="Date of Addmission" placeholder='DD/MM/YYYY' id='Date of Addmission' class='form-input-size' required />
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Student Name</label>
+               <input type='text' autocapitalize="characters"  name="Student Name" id='name' placeholder='Student Name' class='form-input-size' required />
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Student Name(As Per adhar)</label>
+               <input type='text' autocapitalize="characters" name="Student Name(As Per adhar)" id='name' placeholder='Student Name(As Per adhar)' class='form-input-size' required />
+           </div>
+
+
+
+<script type="text/javascript">
+function maxLengthCheck(object)
+  {
+    if (object.value.length > object.maxLength)
+      object.value = object.value.slice(0, object.maxLength)
+  }
+</script>
+           <div class='form-input'>
+               <label id='name-label'>Student Adhar No.</label>
+               <input oninput="maxLengthCheck(this)" type = "number" maxlength = "12" name="STUDENT ADHAR NO" id='name' placeholder='Student Adhar No.' class='form-input-size' required />
+           </div>
+           
+           <div class='form-input'>
+               <label id='name-label'>Student DOB</label>
+               <input type='text' name="Student DOB" placeholder="DD/MM/YYYY" class='form-input-size' required />
+           </div>
+           <script>
+function copyTextValue(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("Gender").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("Gender").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Gender" id="Gender" style="visibility: hidden;"> 
+           <div class='form-input'>
+               <p>Gender</p>
+               <select onChange="copyTextValue(this);" id='class' class='form-input-size' required>
+                   <option disabled selected value>--SELECT--</option>
+                   <option value="MALE">MALE</option>
+                   <option value="FEMALE">FEMALE</option>
+               </select>
+           </div>
+
+                      <script>
+function copyTextValue00(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("Birth State").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("Birth State").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Birth State" id="Birth State" style="visibility:hidden;"> 
+           <div class='form-input'>
+               <p>Birth State</p>
+               <select onChange="copyTextValue00(this);" id='class' class='form-input-size' required>
+                   <option disabled selected value>--SELECT--</option>
+                   <option value="U.P.">U.P.</option>
+                   <option value="OTHER">OTHER</option>
+               </select>
+           </div>
+                      <script>
+function copyTextValue99(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("Nationality").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("Nationality").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Nationality" id="Nationality" style="visibility:hidden;"> 
+           <div class='form-input'>
+               <p>Nationality</p>
+               <select onChange="copyTextValue99(this);" id='class' class='form-input-size' required>
+                   <option disabled selected value>--SELECT--</option>
+                   <option value="INDIAN">INDIAN</option>
+                   <option value="OTHER">OTHER</option>
+               </select>
+           </div>
+
+
+
+           <div class='form-input'>
+               <label id='name-label'>Father's Name</label>
+               <input type='text' autocapitalize="characters" name="FATHER'S NAME" id='name' placeholder="Father's Name" class='form-input-size' required />
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Mother's Name</label>
+               <input type='text' autocapitalize="characters" name="MOTHER'S NAME" id='name' placeholder="Mother's Name" class='form-input-size' required />
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Occupation</label>
+               <input type = "text" autocapitalize="characters" name="OCCUPATION" id='name' placeholder='Occupation' class='form-input-size' required />
+           </div>
+
+           <script>
+function copyTextValue4(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("Category").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("Category").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Category" id="Category" style="visibility: hidden;">  
+
+           <div class='form-input'>
+               <p>Category</p>
+               <select onChange="copyTextValue4(this);" id='dropdown' class='form-input-size' required>
+                   <option disabled selected value>--SECECT--</option>
+                   <option value='GENERAL'>GENERAL</option>
+                   <option value='OBC'>OBC</option>
+                   <option value='SC'>SC</option>
+                   <option value='ST'>ST</option>
+                   <option value='MINORITY'>MINORITY</option>
+               </select>
+           </div>
+
+           <script>
+function copyTextValue5(selectedOption) {
+if(selectedOption.selectedIndex <= 0){
+document.getElementById("Is CWSN Student").value = '';
+return;
+}
+
+ var selectedOptionValue = selectedOption.value;
+ document.getElementById("Is CWSN Student").value = selectedOptionValue;
+}
+</script>  
+<input type="text" name="Is CWSN Student" id="Is CWSN Student" style="visibility: hidden;">
+           <div class='form-input'>
+               <p>Is CWSN Student</p>
+               <select onChange="copyTextValue5(this);" id='dropdown' class='form-input-size' required>
+                   <option disabled selected value>--SECECT--</option>
+                   <option value='YES'>YES</option>
+                   <option value='NO'>NO</option>
+               </select>
+           </div>
+
+           <div class='form-input'>
+               <label id='name-label'>Mobile No.</label>
+               <input oninput="maxLengthCheck(this)" type = "number" maxlength = "10" name="MOBILE NO" id='name' placeholder='Mobile No.' class='form-input-size' required />
+           </div> 
+
+           <div class='form-input'>
+               <label id='name-label'>Address</label>
+               <TEXTAREA autocapitalize="characters" name="ADDRESS" id='name' placeholder='Address' class='form-input-size' required /></TEXTAREA>
+           </div>
+
+           <div class='form-input'>
+               <input type="submit" id='myBtn' class="submitBtn" value="Submit"/>
+           </div>
+           <span id="show_data">
+           <a href="https://docs.google.com/spreadsheets/d/1g62mTI9d-vT8QcthSioV-ULRMEx5E8qISH7fHUjrHFY/edit?usp=sharing" target="_blank">Show Data</a></span>
+</form>
+</div>
+<div id="loader"></div>
+<!-- INCLUDE "t2228.php:PHP" -->
+
+
+<script>
+var spinner = $('#loader');
+$(function() {
+  $('form').submit(function(e) {
+    e.preventDefault();
+    spinner.show();
+    $.ajax({
+      url: 'https://script.google.com/macros/s/AKfycbykmQlVRHaXXCD-g4vEXXQveRzoExkIM3NEH3_AE0EpzDHLMY-_jAyXgduLTIYi4-6msA/exec',
+      data: $(this).serialize(),
+      method: 'post',
+      dataType: 'JSON'
+    }).done(function(resp) {
+      spinner.hide();
+      alert("Data Saved");
+    });
+  });
+});
+</script>
+</body>
+<style>
+  html{
+    font-size: 16px;
+}
+
+body{
+    background-color: rgba(220, 120, 7, 1);
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.container{
+  width: 100%;
+  margin: 3.2rem auto 0 auto;
+}
+
+@media(min-width: 576px){
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media(min-width: 768px){
+  .container{
+    max-width: 720px
+  }
+}
+
+header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h1{
+  font-weight: 400;
+}
+
+#description{
+  font-weight: 200;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5)
+}
+#survey-form{
+   background: rgba(170, 0, 3, 0.86);
+   padding: 2.3rem 0.5rem;
+   border-radius: 0.3rem;
+}
+
+.form-input{
+   margin: 0 2.5rem 1.2rem 2rem;
+}
+
+.form-input-size{
+   display: block;
+   width: 100%;
+   height: 1.5rem;
+   padding: 0.3rem 0.4rem;
+   border-radius: 0.2rem;
+   outline: 0;
+   border-style: none;
+   margin-top: 0.4rem;
+}
+p{
+ font-size: 1.12rem;
+}
+
+#radio-btn,
+#check-box {
+ margin-right: 0.5rem;
+ min-height: 1.2rem;
+ min-width: 1.2rem;
+}
+
+label {
+ display: flex;
+ align-items: center;
+ font-size: 1.125rem;
+ margin-bottom: 0.5rem;
+}
+textarea{
+ width: 100%;
+ min-height: 6rem;
+ resize: vertical;
+ padding: 0.5rem 0 0 0.5rem;
+}
+
+#myBtn{
+ width: 100%;
+ padding: 0.8rem;
+ background: rgb(7, 173, 10);
+ color: white;
+ border-radius: 0.2rem;
+ cursor: pointer;
+ border: none;
+}
+#show_data{
+    background-color: white;
+     width: 100%;
+ padding: 0.8rem;
+ color: white;
+ border-radius: 0.2rem;
+ cursor: pointer;
+ border: none;
+ margin-left: 40%;
+}
+</style>
